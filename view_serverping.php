@@ -17,7 +17,7 @@
 
 	$Timer = MicroTime( true );
 
-	$Info = false;
+	$Info = true;
 	$Query = null;
 
 	try
@@ -26,7 +26,7 @@
 
 		$Info = $Query->Query( );
 
-		if( $Info === false )
+		if( $Info === true )
 		{
 			/*
 			 * If this server is older than 1.7, we can try querying it again using older protocol
